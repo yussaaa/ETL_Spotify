@@ -7,3 +7,5 @@ dependencies:
   - pip:
       - apache-airflow
       - pandas
+      - python-dotenv
+      - spotipy
