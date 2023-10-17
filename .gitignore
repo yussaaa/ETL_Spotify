@@ -1,5 +1,10 @@
 .env
 
+data/
+
 .cache
 .DS_Store
 *.db
+.python_packages
+__pycache__
+.venv
