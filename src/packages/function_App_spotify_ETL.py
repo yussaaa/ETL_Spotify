@@ -77,7 +77,7 @@ def add_timestamp_to_file(file_name: str):
     return file_name_w_timestamp
 
 
-def save_to_data_lake(obj, directory_on_lake: str = "dev/bronze/"):
+def save_to_data_lake(obj, directory_on_lake: str = "/dev/bronze/"):
     """Helper function to save data to azure data lake.
         Requires azure storage account name and secret.
 
@@ -94,7 +94,7 @@ def save_to_data_lake(obj, directory_on_lake: str = "dev/bronze/"):
         credential=account_key,
     )
     file_system_client = service_client.get_file_system_client(
-        directory_on_lake + "spotify-etl"
+        "spotify-etl" + directory_on_lake
     )
 
     file_name = add_timestamp_to_file("recently_played")
