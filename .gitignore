@@ -10,3 +10,5 @@ data/
 .python_packages
 __pycache__/
 *.egg-info/
+
+__azurite_db_*
