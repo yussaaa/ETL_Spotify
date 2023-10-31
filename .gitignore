@@ -1,10 +1,14 @@
 .env
+.venv
 
 data/
+*.db
 
 .cache
 .DS_Store
-*.db
+
 .python_packages
-__pycache__
-.venv
+__pycache__/
+*.egg-info/
+
+__azurite_db_*

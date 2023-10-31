@@ -17,7 +17,7 @@ default_args = {
 }
 
 dag = DAG(
-    "spotify_dag",
+    "minimium_dag",
     default_args=default_args,
     description="Our first DAG with ETL process!",
     schedule=timedelta(days=1),
